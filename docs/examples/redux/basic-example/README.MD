@@ -12,9 +12,9 @@ npm install redux
 npm install @types/redux
 ```
 
-## Redux overview
+## Redux overview - Setting up the Store
 
-Redux is centralized state store. The store is mutated via actions which are dispatched to the store. The dispatched actions are then processed by a reducer which determines how to change the state based on the current state and the action. For an example [See](./src/BasicExample.ts) and for an example of it in use [see](./src/tests/BasicExample.test.ts). The following describes the key concepts of Redux.
+Redux is centralized state store. The store is mutated via actions which are dispatched to the store. The dispatched actions are then processed by a reducer which determines how to change the state based on the current state and the action. For an example [See](./src/BasicExample.ts) and for an example of it in use [see](./src/tests/BasicExample.test.ts) or [see](./src/BasicConsumer.ts). The following describes the key concepts of Redux.
 
 **Actions**
 
@@ -63,4 +63,28 @@ store.dispatch( {type: "counter/add", payload: 2});
 ```
 
 **Selector**
-A selector knows how to extra a piece of information from the state
+A selector knows how to extra a piece of information from the state.
+
+```ts
+export const selectCounterValue = (state:CounterState) => state.value;
+
+```
+
+## Redux overview - Using the Store
+We can ask a store for its current state as follows.
+
+```ts
+store.getState();
+```
+
+If we want notified of all changes we can use subscribe. The following prints out the state each time it changes. 
+
+```ts
+store.subscribe(()=> console.log("Callback " + store.getState().value));
+```
+
+We update the store by dispatching actions to it. 
+
+```ts
+store.dispatch( {type: "counter/add", payload: 2});
+```
