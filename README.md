@@ -14,7 +14,7 @@ This repository contains information pertaining to working with TypeScript in an
 | ---------------------------------------| ----------------------------|
 |[DevEnv Quick Start](./docs/howtos/dev-env-quick-start.md)|Shows how to get quickly started with a TypeScript dev env |
 
-## Examples
+
 | Example                       | Description                 |
 | ---------------------------------------| ----------------------------|
 |[Redux Basic Example](./docs/examples/redux/basic-example/README.MD)|Explains the basics of Redux with a runnable example |
@@ -22,3 +22,10 @@ This repository contains information pertaining to working with TypeScript in an
 |[Slices](./docs/examples/redux/basic-slice//README.MD)| Introduces Slices |
 |[Enhancers](./docs/examples/redux/enhancers/README.MD)| Introduces Enhancers |
 |[Middleware](./docs/examples/redux/middleware//README.MD)| Introduces Middleware |
+
+## Developement Environment Templates
+| Example                       | Description                 |
+| ---------------------------------------| ----------------------------|
+|[Basic TypeScript](./docs/examples/dev-env-templates/basic-dev-env/README.MD)|Shows how to build and run a minimalist TypeScript project |
+|[Basic TypeScript With Debug](./docs/examples/dev-env-templates/basic-dev-env-debug/README.MD) |Shows how to build and debug a minimialist TypeScript project in Visual Studio code |
+|[Basic TypeScript With Debug and Watch](./docs/examples/dev-env-templates/file-watcher-dev-env-debug/README.MD) |Shows how to build and debug a minimialist TypeScript project in Visual Studio code with debug and file watch|

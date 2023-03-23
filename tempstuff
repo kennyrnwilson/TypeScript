@@ -1,3 +1,14 @@
+"start": "tsc-watch --onsuccess \" node dist/index.js\""
+
+jest.config.js
+
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
+
+tsconfig.json
+
 {
     "compilerOptions": {
         "target": "ES2018", 

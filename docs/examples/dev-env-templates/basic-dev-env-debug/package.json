@@ -1,0 +1,12 @@
+{
+  "name": "basic-dev-env",
+  "version": "1.0.0",
+  "description": "A basic development environment setup with Visual Studio Code debugging",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/Index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
