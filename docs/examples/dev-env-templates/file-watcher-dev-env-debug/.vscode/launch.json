@@ -8,6 +8,14 @@
         "processId": "${command:PickProcess}",
         "restart": true,
         "protocol": "inspector"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Node: Nodemon Start",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run-script", "dev:debug"]
       }
+
     ]
   }

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --exec ts-node src/Index.ts",
+    "start": "nodemon --exec ts-node src/Server.ts",
     "dev": "nodemon src/Index.ts",
-    "dev:debug": "nodemon --inspect src/Index.ts"
+    "dev:debug": "nodemon --inspect src/Server.ts"
   },
   "keywords": [],
   "author": "",
