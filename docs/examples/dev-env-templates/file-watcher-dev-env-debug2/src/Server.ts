@@ -6,4 +6,4 @@ server.use('/index', (_req, res) => {
   res.status(200).json({ hello: "world3" });
 });
 
-server.listen(8000, () => { console.log('Running on localhost:8000') })
+server.listen(8000, () => { console.log('Running server on localhost:8000') })

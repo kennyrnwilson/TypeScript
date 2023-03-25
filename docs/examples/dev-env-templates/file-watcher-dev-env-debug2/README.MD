@@ -77,6 +77,15 @@ For local reference we set the following
 
  ## Add Scripts to package.json
 
+ ## Try out nodemon from the command line
+Let try and run nodemon on our server. By default nodemon usese node to execute files. As we are using TypeScript we will used ts-node instead. [ts-node](https://www.npmjs.com/package/ts-node) to execute our file. We use the --exec parameter to tell nodemon to use ts-node. We installed ts-node as a dev dependency rather than globally so we use the npx command to run it.
+
+```
+npx nodemon --exec ts-node src/Server.ts
+```
+
+Any changes to the source file are picked up by nodemon which restarts the source file in ts-node
+
 We are the following scripts
 
  ```json
@@ -86,6 +95,9 @@ We are the following scripts
     "dev:debug": "nodemon --inspect src/Server.ts"
   },
  ```
+
+
+
 
  * build - Run the TypeScript compiler to compile the code
  * start - Run the Server.ts in nodemon
